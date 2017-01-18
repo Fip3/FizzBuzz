@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>FizzBuzz</title>
+</head>
+<body>
+  <section id="numeros"></section>
+
+  <script type="text/javascript">
+
+    var numeros = document.getElementById('numeros');
+    var texto = "";
+
+    for(var i = 1; i <= 100; i++){
+
+      var quince = 0;
+
+      if ( i % 3 == 0 ) {
+        texto += 'Fizz';
+        quince = 1;
+      } 
+
+      if ( i % 5 == 0 ) {
+        texto += 'Buzz';
+        quince = 1;
+      } 
+
+      if (quince == 0) {
+        texto += i
+      }
+
+      texto += ', ';
+    }
+
+
+
+    numeros.innerHTML = texto;
+
+    
+  </script>
+</body>
+</html>
